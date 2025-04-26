@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>Meus Contatos</h1>
+    </header>
+    <div class="container">
+        <img src="./imagens/caderneta.png" alt="caderneta">
+        <form id="form-contatos">
+            <input type="text" id="nome-contato" placeholder="Nome" required />
+            <input type="tel" id="telefone-contato" placeholder="(99)99999-9999"required/>
+            <button type="submit">Salvar</button>
+        </form>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="./imagens/tel.webp"></th>
+                    <th>Nome de Contato</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-contatos">
+                <tr>
+                    <td></td>
+                    <td>----</td>
+                    <td>----</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
